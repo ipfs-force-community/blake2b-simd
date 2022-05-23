@@ -7,7 +7,7 @@
 
 package blake2b
 
-func compressGeneric(d *digest, p []uint8) {
+func compress(d *digest, p []uint8) {
 	h0, h1, h2, h3, h4, h5, h6, h7 := d.h[0], d.h[1], d.h[2], d.h[3], d.h[4], d.h[5], d.h[6], d.h[7]
 
 	for len(p) >= BlockSize {
